@@ -63,7 +63,7 @@ int main(int argc, char const* argv[]) {
 	int pid = fork();
 	if (pid == 0) {
 		primes(p);
-	} else if (pid == 0) {
+	} else {
 		close(p[WR]);
 		close(p[RD]);
 		wait(0);
